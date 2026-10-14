@@ -8,7 +8,7 @@ def read_notepad(file_path):
         return content
 
 # Replace 'F:/Folder/test.txt' with the path to your Notepad file
-notepad_path = 'F:/Folder/test.txt'
+notepad_path = r'D:\AdvanceCopyPaste-main\test.txt'
 
 lines = read_notepad(notepad_path)
 current_line = 0
