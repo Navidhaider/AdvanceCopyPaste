@@ -1,63 +1,33 @@
-# AdvanceCopyPaste
+# Advance Copy Paste Automation 🚀
 
-A lightweight Python productivity tool designed to automate sequential line-by-line copying from text files. Perfect for data entry, form filling, or pasting large lists line-by-line without manual copying.
+A lightweight Python script designed to eliminate the friction of repetitive data entry. 
+
+Instead of constantly switching windows to copy and paste lines from a text document one by one, this tool reads your entire document in the background. Simply press the **Insert** key, and the script will automatically paste the next line from your list directly into your active window and hit Enter.
+
+Perfect for filling out forms, migrating lists, or automating repetitive messaging.
+
+## ✨ Features
+* **Sequential Pasting:** Reads a text file and pastes it line-by-line sequentially.
+* **Global Hotkey:** Works in the background across any application using the `Insert` key.
+* **Auto-Submit:** Automatically simulates the `Enter` key after pasting.
+* **Quick Exit:** Instantly terminate the script anytime by pressing `q`.
 
 ---
 
-## 🚀 Features
+## 🛠️ Complete Setup Guide (For Beginners)
 
-- **Sequential Clipboard Copying:** Reads lines from a target text file and loads them into your clipboard one at a time.
-- **Hotkey Trigger:** Simply press the **`Insert`** key anywhere on your system to load the next line directly into your clipboard.
-- **Simple Setup:** No complex setup required—just place your file in the directory and run.
+### Step 1: Install Python
+1. Go to the official Python website: [python.org/downloads](https://www.python.org/downloads/)
+2. Download the latest version for your operating system.
+3. **CRITICAL:** When running the installer, you **must** check the box at the bottom that says **"Add Python to PATH"** before clicking Install.
 
----
+### Step 2: Download This Tool
+1. Click the green **Code** button at the top of this repository and select **Download ZIP**.
+2. Extract the folder to your computer (e.g., your Desktop or a dedicated Scripts folder).
 
-## 📋 Prerequisites
-
-Ensure you have Python installed on your system:
-
-```bash
-python --version
-```
-
-**📥 If Python is NOT installed:**
-Windows / macOS / Linux: Download and install the latest version from the official python.org downloads page.
-
-Note for Windows users: Be sure to check the box that says "Add Python to PATH" during installation.
-
-**⚙️ How to Use**
-Clone or Download the Repository:
-git clone [https://github.com/LogicFectum/AdvanceCopyPaste.git](https://github.com/LogicFectum/AdvanceCopyPaste.git)
-cd AdvanceCopyPaste
-
-
-**3. Prepare Your Text File:**
-
-Place your target text file (e.g., test.txt) containing the list of lines in the same directory as the script.
-
-
-
-**Run the Script:**
-python AdvanceCopyScript.py
-
-
-
-**4. Start Copying:**
-
-Press the Insert key to cycle to the next line.
-
-Paste (Ctrl + V) into your target application and repeat.
-
-
-
-**📁 Repository Structure**
-AdvanceCopyScript.py — Main execution script.
-
-test.txt — Sample text file for testing line-by-line copying.
-
-README.md — Project documentation.
-
-
-
-**🤝 Contributing**
-Contributions, issues, and feature requests are welcome! Feel free to open a pull request or issue on the repository.
+### Step 3: Install Required Libraries
+This script relies on two external libraries to control your keyboard and clipboard.
+1. Open your computer's terminal (Command Prompt on Windows, Terminal on Mac).
+2. Run the following command:
+   ```bash
+   pip install keyboard pyperclip
